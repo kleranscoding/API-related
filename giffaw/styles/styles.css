@@ -1,0 +1,86 @@
+
+/** ===== BASIC ===== **/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    color: #c7c3c3;
+}
+
+label {
+    margin: 10px;    
+}
+
+form {
+    margin-bottom: 50px;
+}
+
+img {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+/** ===== CLASS ===== **/
+
+.container {
+    margin-bottom: 50px;
+}
+
+.row {
+    margin-top: 50px;
+}
+
+.col-sm-4, .col-sm-8 {
+    width: 95%;
+    text-align: center;
+}
+
+
+.gif-gallery {
+    text-align: center;
+}
+
+.count {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5em;
+    padding: 20px;
+    transition: all 0.5s linear;
+}
+
+.gif-gallery button:hover {
+    transform: scale(1.125);
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.count:hover {
+    transform: scale(1.25);
+}
+
+.gif-gallery button {
+    margin: 10px;
+    width: 100%;
+    border-radius: 25px;
+    transition: all 0.5s linear;
+}
+
+.empty {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
