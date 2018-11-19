@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+		<link rel="stylesheet" href="styles/styles.css">
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="scripts/app.js" defer></script>
+		<title>Country API</title>
+
+	</head>
+	<body>
+		<!-- Add your HTML here -->
+		<h1> Country API </h1>
+		
+		<header>
+			<h3>Search country by</h3>
+			<img src='images/globe.jpg'>
+			<nav class='nav-bar'>
+				<p>Continent</p>
+				<p>Regional Bloc</p>
+				<p>Capital City</p>
+				<p>Language</p>
+				<p>Calling Code</p>
+				<p>Currency</p>
+			</nav>
+		</header>
+
+		<div class='region nav-div'>
+			<h3>select a continent to show countries</h3>
+			<select class='continent'>
+				<option>select a continent</option>
+			</select>
+			<div class='text'></div>
+		</div>
+
+		<div class='regionBloc nav-div'>
+			<h3>select a regional bloc to show countries</h3>
+			<select class='bloc'>
+				<option>select a regional bloc</option>
+			</select>
+			<div class='text'></div>
+		</div>
+
+		<div class='capital-city nav-div'>
+			<h3>search country by capital city</h3>
+			<input class='capital' placeholder='e.g. Washington, D.C.'>
+			<button>Search</button>
+			<div class='text'></div>
+		</div>
+
+		<div class='language nav-div'>
+			<h3>search country by language (refer to 
+				<i><a href='http://www.constitution.org/lg/languagecode.html' target='_blank'>
+					ISO 639-1 code list
+				</a></i>)
+			</h3>
+			<input class='lang' value='' placeholder='e.g. EN'>
+			<button>Search</button>
+			<div class='text'></div>
+		</div>
+
+		<div class='calling-code nav-div'>
+			<h3>search country by calling code</h3>
+			<input class='calling-code' value='' placeholder='e.g. 1'>
+			<button>Search</button>
+			<div class='text'></div>
+		</div>
+
+		<div class='currency nav-div'>
+			<h3>search country by currency (refer to 
+				<i><a href='https://datahub.io/core/currency-codes' target='_blank'>
+					ISO 4217 code list
+				</a></i>)
+			</h3>
+			<input class='currency' value='' placeholder='e.g. USD'>
+			<button>Search</button>
+			<div class='text'></div>
+		</div>
+
+		<div id='map_div'></div>
+
+		<div id='country-info'>
+				<div class='container'></div>
+		</div>
+
+	</body>
+</html>
